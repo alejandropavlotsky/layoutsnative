@@ -16,8 +16,11 @@ const App = () => {
 
 const styles = StyleSheet.create({
   contenedor: {
-    backgroundColor: 'red',
+    backgroundColor: 'cornflowerblue',
     flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
   caja1: {padding: 20, backgroundColor: 'navy'},
   caja2: {padding: 20, backgroundColor: 'yellow'},
