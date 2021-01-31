@@ -4,7 +4,7 @@ import {StyleSheet, View, Image, Text, ScrollView} from 'react-native';
 const App = () => {
   return (
     <>
-      <View>
+      <ScrollView>
         <View style={{flexDirection: 'row'}}>
           <Image
             style={styles.banner}
@@ -45,8 +45,29 @@ const App = () => {
               />
             </View>
           </ScrollView>
+          <Text style={styles.titulo}>Los mejores alojamientos</Text>
+          <View>
+            <View>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/mejores1.jpg')}
+              />
+            </View>
+            <View>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/mejores2.jpg')}
+              />
+            </View>
+            <View>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/mejores3.jpg')}
+              />
+            </View>
+          </View>
         </View>
-      </View>
+      </ScrollView>
     </>
   );
 };
@@ -68,6 +89,11 @@ const styles = StyleSheet.create({
     width: 250,
     height: 300,
     marginRight: 10,
+  },
+  mejores: {
+    width: '100%',
+    height: 200,
+    marginVertical: 5,
   },
 });
 
